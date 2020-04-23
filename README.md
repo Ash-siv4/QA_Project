@@ -1,1 +1,1 @@
-# QA_Project
+# InventoryManagementSystemProject
