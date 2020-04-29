@@ -1,21 +1,21 @@
 package com.qa.connectTest;
 
-//import static org.junit.Assert.assertNotEquals;
-//
-////import java.sql.SQLException;
-//
-//import org.junit.Test;
-//
-//import com.qa.connect.Connect;
+import static org.junit.Assert.assertNotEquals;
+
+//import java.sql.SQLException;
+
+import org.junit.Test;
+
+import com.qa.connect.Connect;
 
 public class ConnectTest {
 	
-//	Connect check = new Connect("inventory");
-//	
-//	@Test
-//	public void CheckCon() {
-//		assertNotEquals(null, check.call());
-//	}
+	Connect check = new Connect("inventoryTest");
+	
+	@Test
+	public void CheckCon() {
+		assertNotEquals(null, check.call());
+	}
 	
 //	@Test (expected = SQLException.class)
 //	public void exceptionCheck() {

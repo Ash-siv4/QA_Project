@@ -1,6 +1,7 @@
 package com.qa.accessTest;
 
 import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
@@ -100,6 +101,7 @@ public class AccessCustomerTest {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+//		doThrow(new SQLException()).when(dataC).accessC.createC(null);
 	}
 
 	@After

@@ -1,9 +1,16 @@
 package com.qa.runTest;
 
+import static org.junit.Assert.assertEquals;
+//import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
+//import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.verify;
+
 
 import java.sql.Connection;
-import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 import org.junit.After;
@@ -12,29 +19,24 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.qa.access.AccessCustomer;
-import com.qa.access.AccessItem;
-import com.qa.access.AccessOrder;
 import com.qa.connect.Connect;
-//import com.qa.data.CustomerData;
-//import com.qa.data.CustomerItem;
-//import com.qa.data.CustomerOrder;
+import com.qa.run.ScanIn;
+//import com.qa.run.SelectCustomer;
+//import com.qa.run.SelectItem;
+//import com.qa.run.SelectOrder;
 import com.qa.run.Selection;
 
 public class SelectionTest {
 
 	static Connection conn = null;
 	static Statement stmt = null;
-	ResultSet rs = null;
 	static Connect connection = null;
 
-//	CustomerData dataC = mock(CustomerData.class);
-//	CustomerItem dataI = mock(CustomerItem.class);
-//	CustomerOrder dataO = mock(CustomerOrder.class);
-	AccessCustomer accessC = mock(AccessCustomer.class);
-	AccessItem accessI = mock(AccessItem.class);
-	AccessOrder accessO = mock(AccessOrder.class);
-	Selection select = new Selection(connection);
+	ScanIn in = mock(ScanIn.class);
+//	SelectCustomer a = mock(SelectCustomer.class);
+//	SelectItem b = mock(SelectItem.class);
+//	SelectOrder c = mock(SelectOrder.class);
+	Selection select = new Selection(connection, in);
 
 //------------------------------------- START CONNECTION -------------------------------------
 
@@ -49,68 +51,28 @@ public class SelectionTest {
 
 	@Before
 	public void initTable() {
-//		when(accessC.)
+		when(in.getInt()).thenReturn(1);
+//		doNothing().when(a).customerCRUD();
 	}
 
 	@Test
 	public void testTable() {
-
+//		select.table();
+		verify(in,never()).getInt();
+//		verify(a,times(1)).customerCRUD();
+//		verify(b,never()).itemCRUD();
+//		verify(c,never()).orderCRUD();
+		assertEquals(1,in.getInt());
 	}
 
 	@After
-	public void destroyTable() {
-
-	}
-
-//------------------------------------- CUSTOMER CRUD Test -------------------------------------
-
-	@Before
-	public void initCustomer() {
-
-	}
-
-	@Test
-	public void testCustomer() {
-
-	}
-
-	@After
-	public void destroyCustomer() {
-
-	}
-
-//------------------------------------- ITEM CRUD Test -------------------------------------
-
-	@Before
-	public void initItem() {
-
-	}
-
-	@Test
-	public void testItem() {
-
-	}
-
-	@After
-	public void destroyItem() {
-
-	}
-
-//------------------------------------- ORDER CRUD Test -------------------------------------
-
-	@Before
-	public void initOrder() {
-
-	}
-
-	@Test
-	public void testOrder() {
-
-	}
-
-	@After
-	public void destroyOrder() {
-
+	public void destroy() {
+		String deleteEntry = "DELETE FROM customers";
+		try {
+			stmt.executeUpdate(deleteEntry);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 
 //------------------------------------- END CONNECTION -------------------------------------
@@ -119,4 +81,5 @@ public class SelectionTest {
 	public static void stopConnect() {
 		conn = null;
 	}
+
 }
