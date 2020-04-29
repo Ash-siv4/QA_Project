@@ -7,7 +7,7 @@ public class OrderData {
 	private int orderCustID;
 	private int orderItemID;
 	private int orderQuant;
-	private float totalCost;
+	private double totalCost;
 	
 	//Generating the getters and setters for orders table data:
 	public int getOrderID() {
@@ -34,10 +34,10 @@ public class OrderData {
 	public void setOrderQuant(int orderQuant) {
 		this.orderQuant = orderQuant;
 	}
-	public float getTotalCost() {
+	public double getTotalCost() {
 		return totalCost;
 	}
-	public void setTotalCost(float totalCost) {
+	public void setTotalCost(double totalCost) {
 		this.totalCost = totalCost;
-	}
+	}	
 }

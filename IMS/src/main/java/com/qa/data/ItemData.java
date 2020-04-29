@@ -5,7 +5,7 @@ public class ItemData {
 	//Declaring item table data:
 	private int itemID;
 	private String itemName;
-	private float Price;
+	private double Price;
 	private int stock;
 	
 	//Generating the getters and setters for items table data:
@@ -21,10 +21,10 @@ public class ItemData {
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
-	public float getPrice() {
+	public double getPrice() {
 		return Price;
 	}
-	public void setPrice(float price) {
+	public void setPrice(double price) {
 		Price = price;
 	}
 	public int getStock() {
@@ -32,5 +32,5 @@ public class ItemData {
 	}
 	public void setStock(int stock) {
 		this.stock = stock;
-	}
+	}	
 }
