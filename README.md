@@ -1,5 +1,4 @@
 # QA_Project
-<<<<<<< HEAD
 =======
 
 ## INVENTORY MANAGEMENT SYSTEM
