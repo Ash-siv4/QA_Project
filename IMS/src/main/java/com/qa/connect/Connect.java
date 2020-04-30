@@ -4,17 +4,17 @@ import java.sql.*;
 
 public class Connect {
 	
-	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+	static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 	static String DB_URL;
 	static final String USER = "root";
-	static final String PASS = "root";
+	static final String PASS = "pickle";
 	
 	static Connection conn = null;
 	static Statement stmt = null;
 
 	public Connect(String database) {
-		DB_URL = "jdbc:mysql://localhost:3306/" + database + "?useSSL=false&serverTimezone=GMT";//test on local workbench
-//		DB_URL = "jdbc:mysql://35.189.126.144/" + database + "?useSSL=false&serverTimezone=GMT";//publicIP
+//		DB_URL = "jdbc:mysql://localhost:3306/" + database + "?useSSL=false&serverTimezone=GMT";//test on local workbench
+		DB_URL = "jdbc:mysql://34.89.64.253/" + database + "?useSSL=false&serverTimezone=GMT";//publicIP
 //		DB_URL = "jdbc:mysql://10.41.192.3/" + database + "?useSSL=false&serverTimezone=GMT";//privateIP
 		try {
 			Class.forName(JDBC_DRIVER);

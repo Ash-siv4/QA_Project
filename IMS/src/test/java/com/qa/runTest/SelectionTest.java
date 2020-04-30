@@ -42,7 +42,7 @@ public class SelectionTest {
 
 	@BeforeClass
 	public static void startConnect() {
-		connection = new Connect("inventorytest");
+		connection = new Connect("inventoryTest");
 		conn = connection.call();
 		stmt = connection.getstmt();
 	}

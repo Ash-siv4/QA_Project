@@ -26,17 +26,26 @@ CREATE TABLE inventory.items(
 CREATE TABLE inventory.orders(
     orderID int unique NOT NULL AUTO_INCREMENT,
     customerID int NOT NULL,
+    PRIMARY KEY (orderID),
+    FOREIGN KEY (customerID) REFERENCES customers(customerID)
+);
+
+CREATE TABLE inventory.orderline(
+    orderLineID int unique NOT NULL AUTO_INCREMENT,
+    orderID int NOT NULL,
 	itemID int NOT NULL,
 	orderQuant int,
     totalCost float,
-    PRIMARY KEY (orderID),
-    FOREIGN KEY (customerID) REFERENCES customers(customerID),
+    PRIMARY KEY (orderLineID),
+    FOREIGN KEY (orderID) REFERENCES orders(orderID),
     FOREIGN KEY (itemID) REFERENCES items(itemID)
 );
+
 
 SHOW tables;
 DESCRIBE customers;
 DESCRIBE orders;
+DESCRIBE orderline;
 DESCRIBE items;
 
 INSERT INTO customers(firstname,surname,email,mobile,address,cardType,cardNo,expiryMonth,expiryYear,cardCVC) VALUES('Ash','Siva','as@gmail.com','07654456564','1 abc lane, London, HA3 9SU','Visa','5234123412341234',11,2012,464);
@@ -52,6 +61,11 @@ INSERT INTO items(itemName,price,stock) VALUES('Deadpool DVD',8.99,900);
 SELECT * FROM items;
 UPDATE items SET stock=934 WHERE itemID=1;
 DELETE FROM items WHERE itemID=0;
+
+
+SELECT * FROM orders;
+SELECT * FROM orderline;
+
 
 INSERT INTO orders(customerID) VALUES(4);
 SELECT orderID FROM orders WHERE customerID=4;

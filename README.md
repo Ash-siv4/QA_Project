@@ -12,12 +12,15 @@ Simply put, the user can:
 The application is designed to be accessible via a command line interface(CLI).
 
 ### Getting started
-To get a copy of the project on your local system for further development, follow these instructions:
--
--
+To download and test the application on your local system, follow these instructions:
+- Copy the url below into a new browser on your computer
+- http://xx.xxx.xxx.43:8081/nexus/#browse/browse:maven-snapshots:com%2Fqa%2FIMS%2F0.0.1-SNAPSHOT%2F0.0.1-20200430.174907-2%2FIMS-0.0.1-20200430.174907-2.jar
+- Click on the IMS-0.0.1-20200430.174907-2.jar
+- Click the link next to path and download the file, click keep if a request pops up
+- Go into the downloads folder on your computer
 - Open up a command line interface (Terminal for Mac, Command Prompt for Windows)
--
--
+- Type in: java -jar IMS-0.0.1-20200430.174907-2.jar
+- Press enter and the application will run.
 
 ### Built With
 Coding platform:
@@ -32,3 +35,5 @@ Database location:
 
 ### Acknowledgements
 - QA trainers
+
+### Kanban Board

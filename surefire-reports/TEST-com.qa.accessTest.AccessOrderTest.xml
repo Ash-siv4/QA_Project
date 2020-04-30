@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="com.qa.accessTest.AccessOrderTest" time="0.346" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="com.qa.accessTest.AccessOrderTest" time="1.04" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
@@ -29,7 +29,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\ashsi\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Program Files\apache-maven-3.6.3\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\ashsi\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Users\ashsi\AppData\Local\Programs\Microsoft VS Code\bin;."/>
     <property name="maven.conf" value="C:\Program Files\apache-maven-3.6.3\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -65,11 +65,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.qa.accessTest.AccessOrderTest" name="testRead1" time="0.161"/>
-  <testcase classname="com.qa.accessTest.AccessOrderTest" name="testRead2" time="0.091"/>
-  <testcase classname="com.qa.accessTest.AccessOrderTest" name="testCreate1" time="0.048"/>
-  <testcase classname="com.qa.accessTest.AccessOrderTest" name="testCreate2" time="0.044"/>
-  <testcase classname="com.qa.accessTest.AccessOrderTest" name="testDelete1" time="0"/>
-  <testcase classname="com.qa.accessTest.AccessOrderTest" name="testDelete2" time="0.001"/>
-  <testcase classname="com.qa.accessTest.AccessOrderTest" name="testUpdate" time="0.001"/>
+  <testcase classname="com.qa.accessTest.AccessOrderTest" name="testRead1" time="0.153"/>
+  <testcase classname="com.qa.accessTest.AccessOrderTest" name="testRead2" time="0.15"/>
+  <testcase classname="com.qa.accessTest.AccessOrderTest" name="testCreate1" time="0.148"/>
+  <testcase classname="com.qa.accessTest.AccessOrderTest" name="testCreate2" time="0.175"/>
+  <testcase classname="com.qa.accessTest.AccessOrderTest" name="testDelete1" time="0.126"/>
+  <testcase classname="com.qa.accessTest.AccessOrderTest" name="testDelete2" time="0.129"/>
+  <testcase classname="com.qa.accessTest.AccessOrderTest" name="testUpdate" time="0.159"/>
 </testsuite>
