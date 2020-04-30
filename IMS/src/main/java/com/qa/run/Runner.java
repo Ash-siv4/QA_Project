@@ -9,5 +9,6 @@ public class Runner {
 		Connect invCon = new Connect("inventory");
 		Selection tester = new Selection(invCon, user);
 		tester.table();
+		
 	}
 }

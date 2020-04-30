@@ -70,7 +70,7 @@ public class AccessItemTest {
 				assertEquals(dataI.getStock(), stock);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -80,7 +80,7 @@ public class AccessItemTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -101,7 +101,7 @@ public class AccessItemTest {
 		try {
 			stmt.executeUpdate(create);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 		accessI.readAlli();
 		String readall = "SELECT * from customers WHERE itemName='Shirt'";
@@ -116,7 +116,7 @@ public class AccessItemTest {
 				assertEquals(dataI.getStock(), stock);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -126,7 +126,7 @@ public class AccessItemTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -153,7 +153,7 @@ public class AccessItemTest {
 				assertEquals(dataI.getItemName(), Iname);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -163,7 +163,7 @@ public class AccessItemTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -189,7 +189,7 @@ public class AccessItemTest {
 				assertEquals(dataI.getPrice(), price, 0);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -199,7 +199,7 @@ public class AccessItemTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -225,7 +225,7 @@ public class AccessItemTest {
 				assertEquals(dataI.getStock(), stock);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -235,7 +235,7 @@ public class AccessItemTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -262,7 +262,7 @@ public class AccessItemTest {
 				assertEquals(null, Iname);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -272,19 +272,19 @@ public class AccessItemTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
 //------------------------------------- Exception Testing -------------------------------------
 
-	ItemData x = mock(ItemData.class);
-	AccessItem y = new AccessItem(connection);
-
-	@Before
-	public void excepInit() {
-
-	}
+//	ItemData x = mock(ItemData.class);
+//	AccessItem y = new AccessItem(connection);
+//
+//	@Before
+//	public void excepInit() {
+//
+//	}
 
 //	@Test(expected = SQLException.class)
 //	public void excepTest() {

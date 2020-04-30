@@ -65,7 +65,7 @@ public class AccessOrderTest {
 				assertEquals(dataO.getOrderCustID(), IDcust);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -75,13 +75,13 @@ public class AccessOrderTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 		String deleteEntry1 = "DELETE FROM orders";
 		try {
 			stmt.executeUpdate(deleteEntry1);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -116,7 +116,7 @@ public class AccessOrderTest {
 				assertEquals(dataO.getTotalCost(), cost, 0);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -126,13 +126,13 @@ public class AccessOrderTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 		String deleteEntry1 = "DELETE FROM orders";
 		try {
 			stmt.executeUpdate(deleteEntry1);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -153,14 +153,14 @@ public class AccessOrderTest {
 		try {
 			stmt.executeUpdate(create);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 		String create1 = "INSERT INTO orderline(orderID,itemID,orderQuant,totalCost) VALUES(" + dataO.getOrderID() + ","
 				+ dataO.getOrderItemID() + "," + dataO.getOrderQuant() + 	"," + dataO.getTotalCost() + ")";
 		try {
 			stmt.executeUpdate(create1);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 		accessO.readAllOrd();
 		String readall = "SELECT ol.orderID, o.customerID, SUM(ol.totalCost) AS totalCost FROM orderline ol "
@@ -180,7 +180,7 @@ public class AccessOrderTest {
 				assertEquals(dataO.getTotalCost(), cost, 0);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -196,7 +196,7 @@ public class AccessOrderTest {
 		try {
 			stmt.executeUpdate(deleteEntry1);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -216,14 +216,14 @@ public class AccessOrderTest {
 		try {
 			stmt.executeUpdate(create);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 		String create1 = "INSERT INTO orderline(orderID,itemID,orderQuant,totalCost) VALUES(" + dataO.getOrderID() + ","
 				+ dataO.getOrderItemID() + "," + dataO.getOrderQuant() + 	"," + dataO.getTotalCost() + ")";
 		try {
 			stmt.executeUpdate(create1);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 		accessO.readAllOrdI();
 		String readall = "SELECT * from orderline WHERE orderID=6";
@@ -242,7 +242,7 @@ public class AccessOrderTest {
 				assertEquals(dataO.getTotalCost(), cost, 0);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -252,13 +252,13 @@ public class AccessOrderTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 		String deleteEntry1 = "DELETE FROM orders";
 		try {
 			stmt.executeUpdate(deleteEntry1);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -294,7 +294,7 @@ public class AccessOrderTest {
 				assertEquals(dataO.getTotalCost(), cost, 0);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -304,13 +304,13 @@ public class AccessOrderTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 		String deleteEntry1 = "DELETE FROM orders";
 		try {
 			stmt.executeUpdate(deleteEntry1);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -340,7 +340,7 @@ public class AccessOrderTest {
 				assertEquals(null, IDitem);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -350,13 +350,13 @@ public class AccessOrderTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 		String deleteEntry1 = "DELETE FROM orders";
 		try {
 			stmt.executeUpdate(deleteEntry1);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -382,7 +382,7 @@ public class AccessOrderTest {
 				assertEquals(null, IDorder);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -392,25 +392,25 @@ public class AccessOrderTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 		String deleteEntry1 = "DELETE FROM orders";
 		try {
 			stmt.executeUpdate(deleteEntry1);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
 //------------------------------------- Exception Testing -------------------------------------
 
-	OrderData x = mock(OrderData.class);
-	AccessOrder y = new AccessOrder(connection);
-
-	@Before
-	public void excepInit() {
-
-	}
+//	OrderData x = mock(OrderData.class);
+//	AccessOrder y = new AccessOrder(connection);
+//
+//	@Before
+//	public void excepInit() {
+//
+//	}
 
 //	@Test(expected = SQLException.class)
 //	public void excepTest() {

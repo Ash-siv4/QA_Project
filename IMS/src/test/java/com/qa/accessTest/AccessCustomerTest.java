@@ -1,7 +1,7 @@
 package com.qa.accessTest;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.doThrow;
+//import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
@@ -99,7 +99,7 @@ public class AccessCustomerTest {
 				assertEquals(dataC.getCardCVC(), CVC);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 //		doThrow(new SQLException()).when(dataC).accessC.createC(null);
 	}
@@ -110,7 +110,7 @@ public class AccessCustomerTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -141,7 +141,7 @@ public class AccessCustomerTest {
 		try {
 			stmt.executeUpdate(create);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 		accessC.readAllC();
 		String readall = "SELECT * from customers WHERE firstname='Peeta'";
@@ -170,7 +170,7 @@ public class AccessCustomerTest {
 				assertEquals(dataC.getCardCVC(), CVC);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -180,7 +180,7 @@ public class AccessCustomerTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -214,7 +214,7 @@ public class AccessCustomerTest {
 				assertEquals(dataC.getFirstname(), name1);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -224,7 +224,7 @@ public class AccessCustomerTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -257,7 +257,7 @@ public class AccessCustomerTest {
 				assertEquals(dataC.getSurname(), name2);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -267,7 +267,7 @@ public class AccessCustomerTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -300,7 +300,7 @@ public class AccessCustomerTest {
 				assertEquals(dataC.getEmail(), mail);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -310,7 +310,7 @@ public class AccessCustomerTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -343,7 +343,7 @@ public class AccessCustomerTest {
 				assertEquals(dataC.getMobile(), phone);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -353,7 +353,7 @@ public class AccessCustomerTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -386,7 +386,7 @@ public class AccessCustomerTest {
 				assertEquals(dataC.getEmail(), addr);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -396,7 +396,7 @@ public class AccessCustomerTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -429,7 +429,7 @@ public class AccessCustomerTest {
 				assertEquals(dataC.getCardType(), cardT);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -439,7 +439,7 @@ public class AccessCustomerTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -472,7 +472,7 @@ public class AccessCustomerTest {
 				assertEquals(dataC.getCardNo(), cardN);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -482,7 +482,7 @@ public class AccessCustomerTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -515,7 +515,7 @@ public class AccessCustomerTest {
 				assertEquals(dataC.getExpiryMonth(), expM);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -525,7 +525,7 @@ public class AccessCustomerTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -558,7 +558,7 @@ public class AccessCustomerTest {
 				assertEquals(dataC.getExpiryYear(), expY);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -568,7 +568,7 @@ public class AccessCustomerTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -601,7 +601,7 @@ public class AccessCustomerTest {
 				assertEquals(dataC.getCardCVC(), CVC);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -611,7 +611,7 @@ public class AccessCustomerTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -645,7 +645,7 @@ public class AccessCustomerTest {
 				assertEquals(null, name1);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -655,19 +655,19 @@ public class AccessCustomerTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
 //------------------------------------- Exception Testing -------------------------------------
 
-	CustomerData y = mock(CustomerData.class);
-	AccessCustomer x = new AccessCustomer(connection);
-
-	@Before
-	public void excepInit() {
-
-	}
+//	CustomerData y = mock(CustomerData.class);
+//	AccessCustomer x = new AccessCustomer(connection);
+//
+//	@Before
+//	public void excepInit() {
+//
+//	}
 
 //	@Test(expected = SQLException.class)
 //	public void excepTest() {

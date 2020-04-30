@@ -71,7 +71,7 @@ public class SelectionTest {
 		try {
 			stmt.executeUpdate(deleteEntry);
 		} catch (SQLException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
