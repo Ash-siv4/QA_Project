@@ -12,14 +12,18 @@ Simply put, the user can:
 The application is designed to be accessible via a command line interface(CLI).
 
 ### Getting started
+Java is needed on your system to be able to run the application on your local system. 
 To download and test the application on your local system, follow these instructions:
-- Copy the url below into a new browser on your computer
-- http://xx.xxx.xxx.43:8081/nexus/#browse/browse:maven-snapshots:com%2Fqa%2FIMS%2F0.0.1-SNAPSHOT%2F0.0.1-20200430.174907-2%2FIMS-0.0.1-20200430.174907-2.jar
-- Click on the IMS-0.0.1-20200430.174907-2.jar
-- Click the link next to path and download the file, click keep if a request pops up
-- Go into the downloads folder on your computer
-- Open up a command line interface (Terminal for Mac, Command Prompt for Windows)
-- Type in: java -jar IMS-0.0.1-20200430.174907-2.jar
+- Copy the git hub url: https://github.com/Asivaraj-QA/QA_Project
+- Open a git bash terminal
+- Git clone the project
+- Cd into the project, i.e: cd QA_Project
+- Do git pull
+- Cd into the java file in the project, i.e: cd IMS
+- Type: mvn clean package
+- Cd target to list the files
+- Copy the file the <java file name>-jar-with-dependencies.jar line
+- Then type in: java -jar <java file name>-jar-with-dependencies.jar
 - Press enter and the application will run.
 
 ### Built With
@@ -34,6 +38,4 @@ Database location:
 - Aswene Sivaraj (Asivaraj-QA)
 
 ### Acknowledgements
-- QA trainers
-
-### Kanban Board
+- QA trainers Piers, Savannah and Vinesh

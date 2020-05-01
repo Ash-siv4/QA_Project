@@ -15,7 +15,7 @@ public class Connect {
 	public Connect(String database) {
 //		DB_URL = "jdbc:mysql://localhost:3306/" + database + "?useSSL=false&serverTimezone=GMT";//test on local workbench
 		DB_URL = "jdbc:mysql://34.89.64.253/" + database + "?useSSL=false&serverTimezone=GMT";//publicIP
-//		DB_URL = "jdbc:mysql://10.41.192.3/" + database + "?useSSL=false&serverTimezone=GMT";//privateIP
+//		DB_URL = "jdbc:mysql://xx.xx.xxx.x/" + database + "?useSSL=false&serverTimezone=GMT";//privateIP
 		try {
 			Class.forName(JDBC_DRIVER);
 			System.out.println("Connecting to the inventory database...");
