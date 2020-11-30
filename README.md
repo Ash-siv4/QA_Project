@@ -27,12 +27,9 @@ To download and test the application on your local system, follow these instruct
 - Press enter and the application will run.
 
 ### Built With
-Coding platform:
-- MAVEN (in JAVA-Eclipse)
-Testing platform:
-- JUnit and Mockito (in JAVA)
-Database location:
-- SQL (Google Cloud Platform(GCP))
+- Coding platform: MAVEN (in JAVA-Eclipse)
+- Testing platform: JUnit and Mockito (in JAVA)
+- Database location: SQL (Google Cloud Platform(GCP))
 
 ### Author
 - Aswene Sivaraj (Asivaraj-QA)
